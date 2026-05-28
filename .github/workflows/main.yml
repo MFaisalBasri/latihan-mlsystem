@@ -44,7 +44,7 @@ jobs:
       # Run MLflow Project 
       - name: Run MLflow Project 
         run: | 
-          mlflow run . --env-manager=local 
+          mlflow run ./MLproject --env-manager=local 
         
       # Save MLflow Artifacts 
       - name: Upload MLflow Artifacts 
