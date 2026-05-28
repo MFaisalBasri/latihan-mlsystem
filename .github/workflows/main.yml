@@ -56,6 +56,9 @@ jobs:
             artifacts/
 
       # Save models to GitHub Repository
+      - name: Debug Secret 
+        run: | 
+         echo "${{ secrets.USERNAME }}"
       - name: Save mlruns to repo
         run: |
           git config --global user.name ${{ secrets.USERNAME }}
